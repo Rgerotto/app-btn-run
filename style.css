@@ -22,10 +22,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    background-color: rgba(207, 207, 207, 0.389);
-    box-shadow: 0 0 .9rem rgb(149, 149, 149);
-    border-radius: 30px;
 }
 h1{
     font-weight: 600;
@@ -33,39 +29,17 @@ h1{
     color: #000000;
     margin-top: 2rem;
 }
-p{
-    width: 90%;
-    padding: 2rem;
-    font-weight: 300;
-    line-height: 2rem;
-    color: #000000;
-}
-.btn{
+.btn-div{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100px;
+    justify-content: space-around;
+}
+
+.btn{
+    padding: 5px 10px;
     border: none;
-    border-radius: 100px;
-    font-weight: 700;
-    color: #fff;
-    font-size: 1.3rem;
-    background-image: linear-gradient(to right bottom, rgb(135, 0, 0) 30%, rgb(251, 108, 56) 70%);
-    box-shadow: .1rem .2rem .2rem black;
-    transition: all .4s;
-}
-
-.btn:hover:not(#no){
-    color: #fff;
-    background-image: linear-gradient(to right bottom, rgb(251, 108, 56) 30%, rgb(135, 0, 0) 70%);
-}
-
-.btn:active{
-    box-shadow: .1rem .1rem .1rem black;
-    transform: scale(.9);
-
+    font-weight: 400;
+    font-size: 1.2em;
 }
 a{
     text-decoration: none;
@@ -77,9 +51,21 @@ a{
 }
 #no{
     position: absolute;
-    bottom: 200px;
+    background-color: transparent;
+    left: 500px;
 }
+.hidden{
+    display: none;
+}
+.teste{
+    width: 50%;
 
+    position: absolute;
+    left: 400px;
+    top: 350px;
+    color: orangered;
+}
+/*
 @media only screen and (max-width:500px){
     body{
         padding: .2rem;
@@ -113,4 +99,4 @@ a{
         position: absolute;
         bottom: 10px;
     }
-}
+} */

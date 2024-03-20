@@ -13,3 +13,8 @@ function run(){
     btnNo.style.left = randomX + "px";
     btnNo.style.top = randomY + "px";
 }
+
+function popUp() {
+    let paragraph = document.getElementById('paragraph');
+    paragraph.classList.remove('hidden')
+}
