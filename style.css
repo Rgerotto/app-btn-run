@@ -43,7 +43,7 @@ h1{
 }
 a{
     text-decoration: none;
-    color: rgb(1, 74, 17);
+    color: rgb(12, 0, 138);
 }
 #yes{
     margin-bottom: 1rem;
@@ -64,7 +64,7 @@ a{
     position: absolute;
     left: 400px;
     top: 350px;
-    color: rgb(1, 74, 17);
+    color: rgb(9, 154, 41);
 }
 /*
 @media only screen and (max-width:500px){
