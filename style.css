@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
     padding: 5rem;
@@ -14,7 +16,8 @@ body{
     align-items: center;
     background-color: rgb(219, 219, 219);
 }
-.container{
+
+.container {
     width: 50%;
     height: 100%;
     text-align: center;
@@ -23,81 +26,54 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-h1{
+
+h1 {
     font-weight: 600;
     letter-spacing: .5rem;
     color: #000000;
     margin-top: 2rem;
 }
-.btn-div{
+
+.btn-div {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.btn{
+.btn {
     padding: 5px 10px;
     border: none;
     font-weight: 400;
     font-size: 1.2em;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(12, 0, 138);
 }
-#yes{
+
+#yes {
     margin-bottom: 1rem;
     cursor: pointer;
-
+    background-color: #0000003a;
 }
-#no{
+
+#no {
     position: absolute;
-    background-color: transparent;
+    background-color: gray;
     left: 500px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.teste{
-    width: 50%;
 
+.teste {
+    margin: 0 auto;
+    width: 50%;
     position: absolute;
-    left: 400px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 350px;
     color: rgb(9, 154, 41);
 }
-/*
-@media only screen and (max-width:500px){
-    body{
-        padding: .2rem;
-
-    }
-    .container{
-        width: 100%;
-        height: auto;
-        margin: 1rem .8rem;
-        border-radius: 0;
-    }
-    h1{
-        font-weight: 400;
-        letter-spacing: 0;
-        margin: 1rem 0;
-    }
-    p{
-        width: 100%;
-        font-size: 1rem;
-        font-weight: 100;
-        line-height: 1rem;
-        padding: 0;
-    }
-    .btn{
-        margin: 1rem 0;
-        padding: .5rem 1rem;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-    #no{
-        position: absolute;
-        bottom: 10px;
-    }
-} */

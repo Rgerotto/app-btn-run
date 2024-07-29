@@ -1,6 +1,5 @@
-
-function run(){
-    const btnNo = document.getElementById("no")
+function run() {
+    const btnNo = document.getElementById("no");
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
 
@@ -15,6 +14,11 @@ function run(){
 }
 
 function popUp() {
-    let paragraph = document.getElementById('paragraph');
-    paragraph.classList.remove('hidden')
+    const paragraph = document.getElementById('paragraph');
+    const btnNo = document.getElementById('no');
+    paragraph.classList.remove('hidden');
+    btnNo.style.display = 'none'; // Hides the "Another candidate" button
+
+    const btnDiv = document.querySelector('.btn-div');
+    btnDiv.style.justifyContent = 'center'; // Center the remaining button
 }
