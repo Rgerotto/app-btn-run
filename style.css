@@ -45,22 +45,37 @@ h1 {
     border: none;
     font-weight: 400;
     font-size: 1.2em;
+    border-radius: 10px;
+    background-color: #a6a6a6;
 }
 
 a {
     text-decoration: none;
     color: rgb(12, 0, 138);
 }
-
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(0, 0, 0, 0.7);
+    }
+    40%{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.6);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(0, 0, 0, 0.6);
+    }
+}
 #yes {
     margin-bottom: 1rem;
     cursor: pointer;
-    background-color: #0000003a;
+    margin-right: 30px;
+    animation: pulse 1s infinite;
 }
 
 #no {
     position: absolute;
-    background-color: gray;
     left: 500px;
 }
 
@@ -68,12 +83,13 @@ a {
     display: none;
 }
 
-.teste {
+.text {
     margin: 0 auto;
+    text-align: center;
     width: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 350px;
-    color: rgb(9, 154, 41);
+    color: rgb(0, 0, 0);
 }
